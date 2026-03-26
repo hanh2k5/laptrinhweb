@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lập trình web</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; font-size: 14px; background: #fff; }
+
+    nav {
+      border: 1px solid #ccc;
+      padding: 8px 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    nav a { text-decoration: none; color: #333; margin: 0 8px; }
+    nav span { color: #333; }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 120px);
+    }
+
+    .form-box {
+      border: 1px solid #ccc;
+      padding: 30px 40px;
+      width: 340px;
+    }
+
+    .form-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+      font-size: 13px;
+    }
+
+    .info-row label {
+      width: 90px;
+      font-weight: normal;
+    }
+
+    .info-row span {
+      font-weight: bold;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+
+    .btn-primary {
+      background: #1a73e8;
+      color: #fff;
+      border: none;
+      padding: 6px 16px;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+
+    footer {
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 8px;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a><span>|</span>
+    <a href="login.html">Đăng xuất</a>
+  </nav>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>Màn hình chi tiết</h2>
+      <div class="info-row">
+        <label>Username</label>
+        <span>test1</span>
+      </div>
+      <div class="info-row">
+        <label>Email</label>
+        <span>test1@gmail.com</span>
+      </div>
+      <div class="actions">
+        <button class="btn-primary" onclick="location.href='update.html'">Chỉnh sửa</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>Lập trình web @01/2024</footer>
+</body>
+</html>
